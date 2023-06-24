@@ -3455,6 +3455,21 @@ window.RS_MODULES.type = 'compiled';
     }
 </style>
 </noscript>
+   <script>
+        // Get the necessary elements
+        const hamburger = document.querySelector('.hamburger-holder');
+        const mobileMenu = document.querySelector('#mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        // Function to toggle the mobile menu
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Add event listeners
+        hamburger.addEventListener('click', toggleMobileMenu);
+        closeMenu.addEventListener('click', toggleMobileMenu);
+    </script>
 <script data-noptimize="1">
 window.lazySizesConfig = window.lazySizesConfig || {};
 window.lazySizesConfig.loadMode = 1;
